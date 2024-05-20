@@ -1,27 +1,24 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import { SITE_NAME } from '../consts';
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href="/">{SITE_NAME}</a></h2>
 	</nav>
 </header>
 <style>
 	header {
 		margin: 0;
-		padding: 0 1em;
+		padding: 0 2em;
 		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
 	h2 {
 		margin: 0;
 		font-size: 32px;
 	}
-
-	h2 a,
-	h2 a.active {
+	h2 a {
+    color: var(--blue-secondary);
 		text-decoration: none;
 	}
 	nav {

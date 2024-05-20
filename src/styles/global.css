@@ -20,20 +20,13 @@
 :root {
   --blue-primary: hsl(191, 84%, 14%);
   --blue-secondary: hsl(191, 84%, 30%);
-  --blue-tertiary: hsl(191, 84%, 55%);
-  --blue-alpha: hsl(191, 84%, 14%, 0.1);
   --yellow-primary: hsl(43, 100%, 45%);
-  --yellow-secondary: hsl(43, 80%, 70%);
-  --yellow-tertiary: hsl(43, 80%, 80%, 0.5);
-  --yellow-tertiary-alpha: hsl(43, 80%, 80%, 0);
   --white-primary: hsl(0, 0%, 100%);
   --white-secondary: hsl(0, 0%, 90%);
   --white-semiTransparent: hsl(0, 0%, 100%, 0.6);
   --white-transparent: hsl(0, 0%, 100%, 0.25);
   --black-primary: hsl(0, 0%, 0%);
-  --black-secondary: hsl(0, 0%, 8%);
-  --black-semiTransparent: hsl(0, 0%, 8%, 20%);
-  --black-overlay: hsl(0, 0%, 8%, 50%);
+  --gray-primary: hsl(0, 0%, 45%);
 
   --fontSize-h1: 6em;
   --fontSize-h1_5: 4.5em;
@@ -74,11 +67,10 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: var(--gray-gradient) no-repeat;
 	background-size: 100% 600px;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
+	color: var(--black-primary);
 	font-size: 20px;
 	line-height: 1.7;
   max-width: min(1920px, 100%);
@@ -120,10 +112,10 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--blue-primary);
 }
 a:hover {
-	color: var(--accent);
+	color: var(--blue-primary);
 }
 p {
 	margin-bottom: 1em;
@@ -159,14 +151,14 @@ pre > code {
 	all: unset;
 }
 blockquote {
-	border-left: 4px solid var(--accent);
+	border-left: 4px solid var(--blue-primary);
 	padding: 0 0 0 20px;
 	margin: 0px;
 	font-size: 1.333em;
 }
 hr {
 	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
+	border-top: 1px solid var(--gray-primary);
 }
 @media (max-width: 720px) {
 	body {
